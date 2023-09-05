@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -11,12 +14,24 @@
 
 :root{
     --fontprincipal: 'Titillium Web', sans-serif;
+    --fontdiversa: 'Rubik', sans-serif;
+    --fontparagraphs: 'Roboto', sans-serif;
+    --fontsecundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #4B4B4C;
+    background-image: url(../imagem/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner{
-    background-color: black;
+    background-color: transparent;
     width: 100vw;
     padding: 20px;
+    position: fixed;
 }
 
 .container{
@@ -24,10 +39,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    box-sizing: border-box;
+    background-color: transparent
 }
 
 .logo{
-    margin-right: 30%;
+    margin-right: 40%;
 }
 
 .social{
@@ -36,8 +53,20 @@
 }
 
 .social button{
-    margin-left: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition: all 0.3s;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    margin-right: 30%;
+    cursor: pointer;
+}
 
+.social button:hover{
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.454));
 }
 
 .div-menu{
@@ -45,28 +74,75 @@
 }
 
 .menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     display: flex;
     width: 200px;
     list-style: none;
-    margin-left: auto;
-    padding-right: 15%;
+    margin-left: 20%;
+    padding-right: 50%;
 }
 
 .menu a{
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: aliceblue;
     text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3rem;
 }
 
 .menu > li{
-    margin-right: 10%;
+    display: inline-block;
+    align-items: ;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    margin-right: 25%;
+    text-shadow: 0px 0px 5px black;
 }
 
 .menu-home{
-    -webkit-text-fill-color: rgb(24, 157, 172);
+    -webkit-text-fill-color: rgb(55, 221, 239);
 }
 
-.menu a:hover{
-    -webkit-text-fill-color: rgb(24, 157, 172);
+.menu li:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+main{
+
+}
+
+.divmain{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+.divmain h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--fontsecundaria);
+    color: white;
+}
+
+.divmain h2{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: var(--fontsecundaria);
+    color: white;
+}
+
+.divmain span{
+    color: #4AC4DB;
+    font-family: var(--fontsecundaria);
+}
+
+.divmain hr{
+    margin-top: 30px;
+    margin-left: 5%;
 }
