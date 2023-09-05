@@ -1,0 +1,72 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fontprincipal);
+}
+
+:root{
+    --fontprincipal: 'Titillium Web', sans-serif;
+}
+
+.banner{
+    background-color: black;
+    width: 100vw;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-right: 30%;
+}
+
+.social{
+    display: flex;
+    padding: 0 0 0 5% ;
+}
+
+.social button{
+    margin-left: 10%;
+
+}
+
+.div-menu{
+    padding-right: 200px;
+}
+
+.menu{
+    display: flex;
+    width: 200px;
+    list-style: none;
+    margin-left: auto;
+    padding-right: 15%;
+}
+
+.menu a{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu > li{
+    margin-right: 10%;
+}
+
+.menu-home{
+    -webkit-text-fill-color: rgb(24, 157, 172);
+}
+
+.menu a:hover{
+    -webkit-text-fill-color: rgb(24, 157, 172);
+}
