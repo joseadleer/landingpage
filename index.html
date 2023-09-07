@@ -7,31 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="banner">
+    <header id="header">
         <div class="container">
-            <div class="logo"><img src="imagem/logo.png" alt="logo" width="120px" height="auto">
-            </div>
-            <div class="div-menu">
-                    <ul class="menu">
-                        <li><a href="#" class="menu-home">HOME</a></li>
-                        <li><a href="#">JDR</a></li>
-                        <li><a href="#">SERVIÇOS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTATO</a></li>
-                    </ul>
-            </div>
-            <div class="social">
-                <a href="https://instagram.com/jdroficinamecanica?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="next"><button><img src="imagem/instagram1.png" alt="instagram" width="35px" height="35px"></button></a>
+            <div class="flex">
+                <a href="index.html"><img src="imagem/logo.png" alt="logo" width="100px" height="100px"></a>
+                <div class="div-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="menu-home"><span>HOME</span></a></li>
+                            <li><a href="#"><span>JDR</span></a></li>
+                            <li><a href="#">SERVIÇOS</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTATO</a></li>
+                        </ul>
+                </div>
+                <nav>
+                    <a href="https://instagram.com/jdroficinamecanica?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="next"><button>
+                        <img src="imagem/instagram1.png" alt="instagram" width="50px" height="50px">
+                    </button></a>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
-            <aside class="div-titulo">
-                <h1>JDR OFICINA MECÂNICA</h1>
-                <h2>O MELHOR ESPAÇO <br> <span>PARA SEU VEÍCULO</span></h2>
-                <hr width="100px">
-            </aside>
+            <div class="div-main">
+                <aside id="id-titulo" class="aside-titulo">
+                    <h1>JDR OFICINA MECÂNICA</h1>
+                    <h2>O MELHOR ESPAÇO <br> <span>PARA SEU VEÍCULO</span></h2>
+                    <hr width="100px">
+                </aside>
+                <aside class="aside-contato">
+                    <h2>Entre em Contato:</h2>
+                    <p>(48) 98470-2192</p>
+                </aside>
+            </div>
+
+        <script src="menu.js"></script>
     </main>
 </body>
 </html>

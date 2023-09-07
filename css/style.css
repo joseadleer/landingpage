@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,100 +21,86 @@
     --fontsecundaria: 'Montserrat', sans-serif;
 }
 
+html{
+    height: 500vh;
+}
+
 body{
-    background-color: #000000;
-    background-image: url(../imagem/fundo2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.838);
+    background-color: #2C3135;
 }
 
-.banner{
-    background-color: rgba(#2F3337);
-    width: 98vw;
-    padding: 20px;
+/* JAVA SCRIPT */
+header.rolagem{
+    background-color: #4e4e4e;
+    padding: 20px 4%;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background-color: transparent
+header{
+    width: 100%;
+    padding: 50px 4%;
+    position: fixed;
+    transition: .5s;
 }
 
-.logo{
-    margin-right: 40%;
+header .menu{
+    list-style-type: none;
+    margin: auto;
 }
 
-.social{
-    display: flex;
-    padding: 0 0 0 5% ;
-}
-
-.social button{
+header .menu li{
     display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    transition: all 0.3s;
-    position: relative;
+    padding-left: 100px;
+    transition: transform 0.3s;
+}
+
+header .menu li:hover{
+    transform: scale(1.05)
+}
+
+header .menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--font);
+    transition: color 0.3s;
+}
+
+header .menu li a:hover{
+    color: rgb(0, 255, 255);
+}
+
+header nav a button{
     border: none;
     background-color: transparent;
-    margin-top: 1.5rem;
-    margin-right: 30%;
     cursor: pointer;
 }
 
-.social button:hover{
-    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.454));
+header nav a button img{
+    transition: transform 0.3s, filter 0.5s;
 }
 
-.div-menu{
-    margin-top: 1.5rem;
-    padding-right: 200px;
-}
-
-.menu{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    display: flex;
-    width: 200px;
-    list-style: none;
-    margin-left: 20%;
-    padding-right: 50%;
-}
-
-.menu a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1.3rem;
-}
-
-.menu > li{
-    display: inline-block;
-    align-items: center;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.1s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    margin-right: 25%;
-    text-shadow: 0px 0px 5px black;
-}
-
-.menu-home{
-    -webkit-text-fill-color: rgb(55, 221, 239);
-}
-
-.menu li:hover{
-    -webkit-transform: scale(1.1);
+header nav a button img:hover{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px white);
     transform: scale(1.1);
 }
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 main{
     margin: auto;
@@ -138,31 +126,73 @@ main{
     font-size: 25px;
 }
 
-.div-titulo{
-    display: inline-block;
-    padding: 200px 30px 200px 150px;
+.div-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #0000009c url(../imagem/fundo2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
 }
 
-.div-titulo h1{
+.aside-titulo.rolagem2{
+    padding-top: 40px;
+}
+
+.aside-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    transition: 1s;
+}
+
+.aside-titulo h1{
     font-size: 20px;
     font-weight: 700;
     font-family: var(--fontsecundaria);
     color: white;
 }
 
-.div-titulo h2{
+.aside-titulo h2{
     font-size: 70px;
     font-weight: 700;
     font-family: var(--fontsecundaria);
     color: white;
 }
 
-.div-titulo span{
+.aside-titulo span{
     color: #4AC4DB;
     font-family: var(--fontsecundaria);
 }
 
-.div-titulo hr{
-    margin-top: 30px;
-    margin-left: 5%;
+.aside-contato{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #3a9aad;
+    border-radius: 10px 10px 0 0;
+    font-size: 40px;
+    text-align: left;
+}
+
+.aside-contato h2, p{
+    color: white;
+    font-family: var(--fontsecundaria);
+}
+
+.aside-contato h2{
+    font-size: 30px;
+}
+
+.aside-contato p{
+    font-size: 40px;
+    font-family: var(--fontdiversa);
 }
