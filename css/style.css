@@ -30,26 +30,19 @@ body{
     background-color: #2C3135;
 }
 
-/* JAVA SCRIPT */
-header.rolagem{
-    background-color: #4e4e4e;
-    padding: 20px 4%;
-}
-
 /* Menu hamburguer para responsividade */
 
-.menu-icon{
+#menu-icon{
     display: none;
 }
 
-.menu-mobile{
+#menu-mobile{
     display: none;
 }
 
 header{
     width: 100%;
-    padding: 50px 4%;
-    position: fixed;
+    padding: 20px 4%;
     transition: .5s;
 }
 
@@ -148,16 +141,12 @@ main{
     background-blend-mode: color;
 }
 
-.aside-titulo.rolagem2{
-    padding-top: 40px;
-}
-
 .aside-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 10%;
     transition: 1s;
 }
@@ -209,12 +198,6 @@ main{
 
 @media screen and (max-width: 768px){
 
-    header.rolagem{
-        width: 100%;
-        padding: 5px 4%;
-        position: fixed;
-        transition: .5s;
-    }
 
     /* Responsividade - Tirando os menus do desktop */
     
@@ -234,34 +217,42 @@ main{
 
     /* Colocando menu responsivo */
 
-    .menu-icon{
+    #menu-icon{
         display: block;
     }
 
-    .menu-icon button{
+    #menu-icon button{
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
 
-    .menu-mobile ul{
+    #menu-mobile.active{
+        display: block;
+    }
+
+    #menu-mobile{
+        position: absolute;
+        width: 100%;
+        top: 120px;
+        right: 1px;
+    }
+
+    #menu{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        justify-content: center;
+        background-color: #2C3135;
     }
 
-    .menu-mobile .nav-item{
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .open{
-        display: block;
+    .nav-link{
+        color: white;
+        text-decoration: none;
     }
 
     .div-main h1{
-        padding-top: 40%;
+        margin-top: 20%;
         font-size: 10px;
     }
 
@@ -271,7 +262,7 @@ main{
 
     .aside-contato{
         width: auto;
-        margin-top: 3.5em;
+        margin-top: 2em;
     }
 
 }
