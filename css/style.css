@@ -36,6 +36,16 @@ header.rolagem{
     padding: 20px 4%;
 }
 
+/* Menu hamburguer para responsividade */
+
+.menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
 header{
     width: 100%;
     padding: 50px 4%;
@@ -195,4 +205,73 @@ main{
 .aside-contato p{
     font-size: 40px;
     font-family: var(--fontdiversa);
+}
+
+@media screen and (max-width: 768px){
+
+    header.rolagem{
+        width: 100%;
+        padding: 5px 4%;
+        position: fixed;
+        transition: .5s;
+    }
+
+    /* Responsividade - Tirando os menus do desktop */
+    
+    header{
+        width: 100%;
+    }
+    
+    header .menu{
+        display: none;
+        list-style-type: none;
+        margin: auto;
+    }
+
+    header nav a button{
+        display: none;
+    }
+
+    /* Colocando menu responsivo */
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .div-main h1{
+        padding-top: 40%;
+        font-size: 10px;
+    }
+
+    .div-main h2{
+        font-size: 35px;
+    }
+
+    .aside-contato{
+        width: auto;
+        margin-top: 3.5em;
+    }
+
 }
