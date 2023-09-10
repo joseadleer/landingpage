@@ -228,7 +228,7 @@ main{
     #menu-mobile{
         position: absolute;
         width: 100%;
-        top: 120px;
+        top: 140px;
         right: 1px;
     }
 
@@ -238,6 +238,17 @@ main{
         text-align: center;
         justify-content: center;
         background-color: #2C3135;
+        list-style-type: none;
+        border-radius: 10px;
+    }
+
+    .nav-item{
+        padding: 0.7rem;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.552);
+        border-radius: 5px;
+        width: 10rem;
+        margin: 5px auto;
     }
 
     .nav-link{
@@ -256,7 +267,7 @@ main{
 
     .aside-contato{
         width: auto;
-        margin-top: 4.5em;
+        margin-top: 4.4em;
     }
 
 }
