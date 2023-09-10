@@ -22,7 +22,7 @@
 }
 
 html{
-    height: 100vh;
+    height: auto;
 }
 
 body{
@@ -194,7 +194,7 @@ main{
 
 
     /* Responsividade - Tirando os menus do desktop */
-    
+
     header{
         width: 100%;
     }
@@ -216,7 +216,8 @@ main{
     }
 
     #menu-icon button{
-        background-color: transparent;
+        background-color: #47BFD9;
+        border-radius: 5px;
         border: none;
         cursor: pointer;
     }
@@ -245,7 +246,7 @@ main{
     .nav-item{
         padding: 0.7rem;
         font-size: 20px;
-        background-color: rgba(255, 255, 255, 0.552);
+        background-color: rgba(37, 192, 213, 0.955);
         border-radius: 5px;
         width: 10rem;
         margin: 5px auto;
