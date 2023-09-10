@@ -22,7 +22,7 @@
 }
 
 html{
-    height: 500vh;
+    height: 100vh;
 }
 
 body{
@@ -54,11 +54,6 @@ header .menu{
 header .menu li{
     display: inline-block;
     padding-left: 100px;
-    transition: transform 0.3s;
-}
-
-header .menu li:hover{
-    transform: scale(1.05)
 }
 
 header .menu li a{
@@ -147,7 +142,6 @@ main{
     justify-content: center;
     flex-direction: column;
     padding-top: 10%;
-    padding-bottom: 10%;
     transition: 1s;
 }
 
@@ -173,9 +167,9 @@ main{
 .aside-contato{
     width: 30%;
     text-align: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     padding: 20px;
-    padding-bottom: 50px;
+    margin-top: 6.5rem;
     background-color: #3a9aad;
     border-radius: 10px 10px 0 0;
     font-size: 40px;
@@ -262,7 +256,7 @@ main{
 
     .aside-contato{
         width: auto;
-        margin-top: 2em;
+        margin-top: 4.5em;
     }
 
 }
