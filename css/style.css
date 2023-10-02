@@ -1,60 +1,278 @@
-@charset "utf-8";
+@charset "UFT-8";
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fontprincipal);
 }
+
+:root{
+    --fontprincipal: 'Titillium Web', sans-serif;
+    --fontdiversa: 'Rubik', sans-serif;
+    --fontparagraphs: 'Roboto', sans-serif;
+    --fontsecundaria: 'Montserrat', sans-serif;
+}
+
+html{
+    height: auto;
+}
+
 body{
-    min-height: 100vh;
-    background-image: url(../imagem/fundo2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.838);
+    background-color: #2C3135;
 }
-nav{
-    background-color: white;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Menu hamburguer para responsividade */
+
+#menu-icon{
+    display: none;
 }
-nav li{
-    height: 50px;
+
+#menu-mobile{
+    display: none;
 }
-nav a{
-    height: 100%;
-    padding: 0;
+
+header{
+    width: 100%;
+    padding: 20px 4%;
+    transition: .5s;
+    background-position: top;
+    background-color: #2C3135;
+    background-attachment: fixed;
+    background
+}
+
+header .menu{
+    list-style-type: none;
+    margin: auto;
+}
+
+header .menu li{
+    display: inline-block;
+    padding-left: 100px;
+}
+
+header .menu li a{
+    color: white;
     text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--font);
+    transition: color 0.3s;
+}
+
+header .menu li a:hover{
+    color: rgb(0, 255, 255);
+}
+
+header nav a button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header nav a button img{
+    transition: transform 0.3s, filter 0.5s;
+}
+
+header nav a button img:hover{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px white);
+    transform: scale(1.1);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
     display: flex;
     align-items: center;
-    color: black;
+    justify-content: space-between;
 }
-nav a:hover{
-    background-color: #fff;
+
+
+
+main{
+    margin: auto;
 }
-nav li:first-child{
-    margin-right: auto;
-}
-.sidebar{
-    position:fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(240, 248, 255, 0.557);
-    backdrop-filter: blur(10px);
-    box-shadow: -10 0 10px rgba(0, 0, 0, .1);
+
+.section-contact{
     display: flex;
+    width: auto;
+    padding: 0 0 0 50rem;
+}
+
+.div-contact{
+    display: flex;
+    padding: 0 250px 0 0;
+}
+
+.div-paragraph{
+    display: inline-block;
+    width: 400px;
+    justify-content: start;
+    background-color: #4AC4DB;
+    padding: 50px 200px 50px 50px;
+    font-size: 25px;
+}
+
+.div-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+
+    background: #0000009c url(../imagem/fundo2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
 }
-.sidebar li{
-    width: 100%;
+
+.aside-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10%;
+    transition: 1s;
 }
-.sidebar a{
-    width: 100%;
+
+.aside-titulo h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--fontsecundaria);
+    color: white;
+}
+
+.aside-titulo h2{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: var(--fontsecundaria);
+    color: white;
+}
+
+.aside-titulo span{
+    color: #4AC4DB;
+    font-family: var(--fontsecundaria);
+}
+
+.aside-contato{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 6.5rem;
+    background-color: #3a9aad;
+    border-radius: 10px 10px 0 0;
+    font-size: 40px;
+    text-align: left;
+}
+
+.aside-contato h2, p{
+    color: white;
+    font-family: var(--fontsecundaria);
+}
+
+.aside-contato h2{
+    font-size: 30px;
+}
+
+.aside-contato p{
+    font-size: 40px;
+    font-family: var(--fontdiversa);
+}
+
+@media screen and (max-width: 768px){
+
+
+    /* Responsividade - Tirando os menus do desktop */
+
+    header{
+        width: 100%;
+    }
+    
+    header .menu{
+        display: none;
+        list-style-type: none;
+        margin: auto;
+    }
+
+    header nav a button{
+        display: none;
+    }
+
+    /* Colocando menu responsivo */
+
+    #menu-icon{
+        display: block;
+    }
+
+    #menu-icon button{
+        background-color: #47BFD9;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menu-mobile.active{
+        display: block;
+    }
+
+    #menu-mobile{
+        position: absolute;
+        width: 100%;
+        top: 140px;
+        right: 1px;
+    }
+
+    #menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: #2C3135;
+        list-style-type: none;
+        border-radius: 10px;
+    }
+
+    .nav-item{
+        padding: 0.7rem;
+        font-size: 20px;
+        background-color: rgba(37, 192, 213, 0.955);
+        border-radius: 5px;
+        width: 10rem;
+        margin: 5px auto;
+    }
+
+    .nav-link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .div-main h1{
+        margin-top: 20%;
+        font-size: 10px;
+    }
+
+    .div-main h2{
+        font-size: 35px;
+    }
+
+    .aside-contato{
+        width: auto;
+        margin-top: 5em;
+    }
+
 }
