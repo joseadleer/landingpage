@@ -173,12 +173,11 @@ main{
     width: 30%;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     margin-top: 6.5rem;
     background-color: #3a9aad;
     border-radius: 10px 10px 0 0;
     font-size: 40px;
-    text-align: left;
 }
 
 .aside-contato h2, p{
